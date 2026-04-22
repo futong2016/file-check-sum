@@ -28,6 +28,13 @@ uv run python main.py
 python main.py
 ```
 
+## 下载与发布
+
+本项目已集成 GitHub Actions 自动发布功能。
+
+- **下载**: 您可以在项目的 [Releases](https://github.com/futong2016/file-check-sum/releases) 页面找到并下载最新版本的 Windows 可执行文件 (`FileChecksumTool.exe`)。
+- **自动构建**: 只要向仓库推送以 `v` 开头的 tag（例如 `v1.0.0`），GitHub Actions 就会自动启动构建流程并发布新版本。
+
 ## 测试
 
 运行单元测试：
