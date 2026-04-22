@@ -6,8 +6,8 @@
 
 - 在 `.github/workflows/` 目录下添加 `build.yml` 配置文件。
 - 配置工作流以在推送以 `v*` 开头的 tag 时触发。
-- 使用 PyInstaller 或类似的工具在 Windows 运行器上打包 Python 代码为 `.exe` 文件。
-- 自动将生成的 `.exe` 文件作为资源上传到 GitHub Release。
+- 使用 PyInstaller 或类似的工具在 Windows 运行器上打包 Python 代码为 `.exe` 文件，文件名应包含版本号（例如 `FileChecksumTool-v1.0.0.exe`）。
+- 自动将生成的带版本号的 `.exe` 文件作为资源上传到 GitHub Release。
 
 ## Capabilities
 

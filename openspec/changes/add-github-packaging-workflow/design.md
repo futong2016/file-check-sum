@@ -16,7 +16,8 @@
 ## Decisions
 
 - **构建工具: PyInstaller**: PyInstaller 是 Python 社区最成熟的打包工具，支持将脚本及其依赖打包成单个可执行文件。
-- **打包模式: --onefile --noconsole**: 由于是 GUI 应用程序，我们需要使用 `--noconsole` 隐藏终端窗口，并使用 `--onefile` 简化分发。
+- **打包模式: --onefile --noconsole --name**: 由于是 GUI 应用程序，我们需要使用 `--noconsole` 隐藏终端窗口，并使用 `--onefile` 简化分发。通过 `--name` 参数动态指定包含版本号的文件名。
+- **版本号获取**: 使用 GitHub Actions 的环境变量 `${{ github.ref_name }}` 来获取触发构建的 tag 名称。
 - **CI 环境: windows-latest**: 既然目标是生成 Windows `.exe`，直接在 GitHub 提供的 Windows 虚拟机上构建是最简单可靠的，避免了复杂的交叉编译。
 - **Release 工具: softprops/action-gh-release**: 这是一个功能丰富且广泛使用的 GitHub Action，能够处理 Release 的创建和资产上传。
 

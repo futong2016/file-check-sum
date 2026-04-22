@@ -9,6 +9,7 @@
 - [x] 2.2 配置工作流触发器（仅在推送 `v*` 形式的 tag 时触发）
 - [x] 2.3 编写构建 Job，包括安装 Python 环境和安装依赖（如 `pyinstaller`）
 - [x] 2.4 编写打包步骤，使用 `pyinstaller --onefile --noconsole main.py`
+- [x] 2.6 更新打包脚本以支持从环境变量获取版本号并命名文件
 - [x] 2.5 编写发布步骤，使用 `softprops/action-gh-release` 上传生成的 `.exe`
 
 ## 3. 验证与文档
